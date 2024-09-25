@@ -21,8 +21,8 @@ jobs:
       - uses: debricked/actions/callgraph@v3
       - uses: debricked/actions@v3
         env:
-          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_STAGING }}
-          DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'
+          DEBRICKED_TOKEN: 'e1656ccfa4d1f4787b281d6d06a6f7e3d9adb5206b941944'
+          DEBRICKED_URI: 'https://staging.debricked.com'
 
   vulnerabilities-scan-review:
     runs-on: ubuntu-latest
@@ -34,5 +34,5 @@ jobs:
           ls
       - uses: debricked/actions@v3
         env:
-          DEBRICKED_TOKEN: 'e5c7c6b5caf4234582db5f7b6953ba12e6542eb2dd3a3c32'
+          DEBRICKED_TOKEN: '2eaa60d16219f48813a899c4362aff3ed2b5b4efeb09116f'
           DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev' 
