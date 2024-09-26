@@ -34,5 +34,5 @@ jobs:
           ls
       - uses: debricked/actions@v3
         env:
-          DEBRICKED_TOKEN: '2eaa60d16219f48813a899c4362aff3ed2b5b4efeb09116f'
+          DEBRICKED_TOKEN: 'ef5fdac3c418b789ff810f31b36906d74a42ff5b641096ae'
           DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'  
