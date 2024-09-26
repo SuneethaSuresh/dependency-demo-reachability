@@ -35,4 +35,4 @@ jobs:
       - uses: debricked/actions@v3
         env:
           DEBRICKED_TOKEN: '2eaa60d16219f48813a899c4362aff3ed2b5b4efeb09116f'
-          DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev' 
+          DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'  
