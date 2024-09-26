@@ -3,26 +3,7 @@ name: Debricked scan
 on: [push]
 
 jobs:
-  vulnerabilities-scan-production:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: debricked/actions/callgraph@v4
-      - uses: debricked/actions@v4
-        env:
-          DEBRICKED_TOKEN: '5e83c45986d159fe7764ed4391c0405493d3287aa8eb796d'
-
-  vulnerabilities-scan-staging:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: debricked/actions/callgraph@v4
-      - uses: debricked/actions@v4
-        env:
-          DEBRICKED_TOKEN: 'e1656ccfa4d1f4787b281d6d06a6f7e3d9adb5206b941944'
-          DEBRICKED_URI: 'https://staging.debricked.com'
+ 
 
   vulnerabilities-scan-review:
     runs-on: ubuntu-latest
