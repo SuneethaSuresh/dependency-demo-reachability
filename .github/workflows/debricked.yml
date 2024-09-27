@@ -3,6 +3,19 @@ name: Debricked scan
 on: [push]
 
 jobs: 
+ vulnerabilities-scan-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: debricked/actions/callgraph@v4
+      - run: |
+          ls
+      - uses: debricked/actions@v4
+        env:
+          DEBRICKED_TOKEN: '63b780621440b7f3c3d20bf594116b6bd312afdef406ab2c'
+          DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'
+          
  vulnerabilities-scan-staging:
   runs-on: ubuntu-latest
 
