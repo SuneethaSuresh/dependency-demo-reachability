@@ -9,6 +9,8 @@ jobs:
   steps:
       - uses: actions/checkout@v4
       - uses: debricked/actions/callgraph@v4
+      - run: |
+          ls
       - uses: debricked/actions@v4
         env:
           DEBRICKED_TOKEN: 'fe4dcd64c911285a06cd40b5e7c68dce2206ba289ccc6d6e'
@@ -20,6 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: debricked/actions/callgraph@v4
+      - run: |
+          ls
       - uses: debricked/actions@v4
         env:
           DEBRICKED_TOKEN: 'b822ebb82caaff4a2f909293ded90589317ddcf100e04eec'
