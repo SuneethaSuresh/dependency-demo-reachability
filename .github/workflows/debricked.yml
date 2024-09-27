@@ -4,9 +4,9 @@ on: [push]
 
 jobs: 
  vulnerabilities-scan-staging:
- runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
- steps:
+  steps:
       - uses: actions/checkout@v3
       - uses: debricked/actions/callgraph@v3
       - uses: debricked/actions@v3
@@ -14,7 +14,7 @@ jobs:
           DEBRICKED_TOKEN: 'fe4dcd64c911285a06cd40b5e7c68dce2206ba289ccc6d6e'
           DEBRICKED_URI: 'https://staging.debricked.com'
 
-vulnerabilities-scan-production:
+ vulnerabilities-scan-production:
     runs-on: ubuntu-latest
 
     steps:
