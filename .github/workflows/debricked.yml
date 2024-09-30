@@ -26,7 +26,7 @@ jobs:
           ls
       - uses: debricked/actions@v4
         env:
-          DEBRICKED_TOKEN: 'fe4dcd64c911285a06cd40b5e7c68dce2206ba289ccc6d6e'
+          DEBRICKED_TOKEN: 'ce35ba6c8cd29feaa55077bc9692cc055e8a53c74a7df65a'
           DEBRICKED_URI: 'https://staging.debricked.com'
 
  vulnerabilities-scan-production:
