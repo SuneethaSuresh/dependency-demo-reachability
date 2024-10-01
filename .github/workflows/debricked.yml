@@ -14,6 +14,8 @@ jobs:
      - uses: debricked/actions/callgraph@v3
      - run: |
           ls
+     - run: |
+          cat debricked-call-graph.java
      - uses: debricked/actions@v3
        env:
           DEBRICKED_TOKEN: 'cd3d45d852eebee4b5897d16722cf8b99e21d49c43e73707'
