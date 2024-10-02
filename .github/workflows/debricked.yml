@@ -10,9 +10,7 @@ jobs:
       image: debricked/cli:latest-resolution-debian
 
     steps:    
-     - uses: actions/checkout@v3
-     - run: |
-          rm debricked-call-graph.java
+     - uses: actions/checkout@v3    
      - uses: debricked/actions/callgraph@v4
      - run: |
           ls     
