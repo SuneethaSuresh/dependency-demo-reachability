@@ -13,10 +13,10 @@ jobs:
      - uses: actions/checkout@v3    
      - uses: debricked/actions/callgraph@v3
      - run: |
-          ls
+          ls     
+     - uses: debricked/actions@v3
      - run: |
           cat debricked-call-graph.java
-     - uses: debricked/actions@v3
        env:
           DEBRICKED_TOKEN: '8cd656437bee8b0004242d1911278706531079ad28dbfc00'
           DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'
