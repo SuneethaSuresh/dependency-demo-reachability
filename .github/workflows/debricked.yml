@@ -18,5 +18,5 @@ jobs:
      - run: |
           cat debricked-call-graph.java
        env:
-          DEBRICKED_TOKEN: '8cd656437bee8b0004242d1911278706531079ad28dbfc00'
+          DEBRICKED_TOKEN: 'e4e2d2b7231276c02b667fc9493422050f0160c0843e779e'
           DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'
