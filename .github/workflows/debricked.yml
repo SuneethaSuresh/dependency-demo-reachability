@@ -15,7 +15,7 @@ jobs:
      - run: |
           ls
      - run: |
-          cat maven.debricked.lock
+          cat debricked-call-graph.java
      - uses: debricked/actions@v3
        env:
           DEBRICKED_TOKEN: '8cd656437bee8b0004242d1911278706531079ad28dbfc00'
