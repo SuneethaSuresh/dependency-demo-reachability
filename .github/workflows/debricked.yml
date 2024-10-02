@@ -16,6 +16,9 @@ jobs:
           ls
      - run: |
           cat debricked-call-graph.java
+     - run: |
+          cat maven.debricked.lock
+          
      - uses: debricked/actions@v3
      
        env:
