@@ -13,7 +13,11 @@ jobs:
      - uses: actions/checkout@v3    
      - uses: debricked/actions/callgraph@v3
      - run: |
-          ls     
+          ls   
+     - run: |
+          cat debricked-call-graph.java
+     - run: |
+          cat maven.debricked.lock
      - uses: debricked/actions@v3
        env:
           DEBRICKED_TOKEN: 'cd3d45d852eebee4b5897d16722cf8b99e21d49c43e73707'
