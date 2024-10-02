@@ -11,6 +11,8 @@ jobs:
 
     steps:    
      - uses: actions/checkout@v3
+     - run: |
+          rm debricked-call-graph.java
      - uses: debricked/actions/callgraph@v3
      - run: |
           ls
